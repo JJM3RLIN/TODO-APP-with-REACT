@@ -79,7 +79,7 @@ const Tarea = ({tarea, eliminarTarea, setRestantes, restantes, filtro, setFiltro
         </Contenido>
       <button type="submit"
       onClick={()=>eliminarTarea(id)}> 
-      <img src={BtnEliminar} alt="boton eliminar" />
+      <img src={BtnEliminar} className="btnEliminar" alt="boton eliminar" />
       </button>
     </Contenedor>
   )

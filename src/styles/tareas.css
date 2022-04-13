@@ -12,9 +12,10 @@
   opacity: 0;
     width: 100%;
     height: 100%;
-    z-index: 100;
+    z-index: 1000000000000000;
     cursor: pointer;
 }
+/*Marcar tareas completadas*/
 .marcar{
     background: linear-gradient(90deg, #57ddff 0%, #c058f3 100%);
 }
@@ -25,4 +26,7 @@
 .rayar{
     text-decoration: line-through!important;
     color: hsl(234, 11%, 52%)!important;
+}
+.btnEliminar{
+    z-index: 1000000000;
 }
