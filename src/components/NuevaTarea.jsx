@@ -19,6 +19,7 @@ background-color:  hsl(235, 24%, 19%);
 color:hsl(236, 33%, 92%);
 padding:10px;
 border:none;
+font-size: 20px;
 &:focus{
   border:none;
   outline:transparent;
@@ -53,7 +54,7 @@ const NuevaTarea = ({guardarTarea, error, setError}) => {
     <>
     {error && <Error />}
     <Formulario onSubmit={addTarea}>
-      <button id='addTarea' className="terminada"></button>
+      <button id='addTarea' className="terminada"><div></div></button>
       <Texto 
       type="text" 
       placeholder="Crea una nueva tarea..." 

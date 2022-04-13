@@ -27,9 +27,9 @@ const ListadoTareas = ({tareas, setTareas,
   tareasFiltradas, restantes, setRestantes}) => {
   
   return (
-    <div className='contenedor'>
+    <main className='contenedor'>
       <ContenidoTareas>{tareas.length > 0 ? `Tareas ${filtro}:` : 'Aún no tienes tareas'}</ContenidoTareas>
-      <ReactSortable list={tareas} setList={setTareas} animation={"150"} sort={true}>
+      <ReactSortable list={tareas} setList={setTareas} animation={150} sort={true} handle=".mantener">
       {
         filtro ?
         tareasFiltradas.map(tarea =>(
@@ -69,7 +69,7 @@ const ListadoTareas = ({tareas, setTareas,
     tareas.length > 0 && <Filtro filtro={filtro} setFiltro={setFiltro} /> 
   }
   <Ordenar>Arrastra y suelta una tarea para ordenarla</Ordenar>
-    </div>
+    </main>
   )
 }
 

@@ -23,7 +23,7 @@ button{
 .ligth .css-xxgwdu{
      background-image: url('./images/bg-desktop-light.jpg');
 }
-.ligth .css-1bqq8ja, .ligth .css-1z20px, 
+.ligth .css-1bqq8ja, .ligth .css-1i8p71l, 
 .ligth .css-jsdo5k, .ligth .css-l2ar7w, 
 .ligth .css-6roky7 ,.ligth input{
      background-color: hsl(0, 0%, 98%);
@@ -36,10 +36,7 @@ button{
      color: hsl(235, 19%, 35%);
 }
 /*Lista ordenada*/
- .css-jsdo5k{
-      cursor: grab;
- }
-.sortable-ghost{
+ .sortable-ghost{
     background-color: hsl(220, 98%, 61%)!important; 
     cursor: grabbing;
     border: none;

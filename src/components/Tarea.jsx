@@ -7,11 +7,13 @@ const Contenido = styled.div`
     align-items: center;
     justify-content: space-between;
     gap:8px;
+    z-index: 10000;
 `;
 const ContenidoTexto = styled.p`
 color: hsl(236, 33%, 92%);
 font-weight: 400;
-font-size: 20px;
+font-size: 23px;
+cursor: grab;
 text-decoration: none;
 transition: all .3s ease-in-out;
 @media (min-width: 990px){
@@ -26,6 +28,7 @@ background-color:  hsl(235, 24%, 19%);
     justify-content:space-between;
     align-items: center;
     transition: all .3s ease-in-out;
+    z-index:10000;
     &:first-of-type{
       border-radius: 5px 5px 0 0;
     }
@@ -75,7 +78,7 @@ const Tarea = ({tarea, eliminarTarea, setRestantes, restantes, filtro, setFiltro
         <div className={`terminada ${estado =='completadas' ? "marcar": ''}`} data-t={id}>
           <input type="checkbox" onClick={()=>handleTerminada(id)}/>
         </div>
-      <ContenidoTexto className={`${estado =='completadas' ? "rayar": ''}`}>{tareaNombre}</ContenidoTexto>
+      <ContenidoTexto className={`mantener ${estado =='completadas' ? "rayar": ''}`}>{tareaNombre}</ContenidoTexto>
         </Contenido>
       <button type="submit"
       onClick={()=>eliminarTarea(id)}> 
